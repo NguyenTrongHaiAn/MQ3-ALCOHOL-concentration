@@ -1,6 +1,6 @@
 #define MQ3pin A0
 const int BUZZER = 2;
-const int DO = 8;
+const int DO = 8; //đi dây chân số 8 
  
 float sensorValue;  //variable to store sensor value
 void setup() {
