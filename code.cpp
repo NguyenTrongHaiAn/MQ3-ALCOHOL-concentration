@@ -1,6 +1,7 @@
 #define MQ3pin A0
 const int BUZZER = 2;
 const int DO = 8;
+ 
 float sensorValue;  //variable to store sensor value
 void setup() {
     Serial.begin(9600); // sets the serial port to 9600
@@ -10,6 +11,7 @@ void setup() {
     pinMode(DO, INPUT);
 }
 void loop() {
+    int alarm=0;
     sensorValue = analogRead(MQ3pin); // read analog input pin 0
     Serial.print("Sensor Value: ");
     Serial.println(sensorValue);
